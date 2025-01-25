@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace EcoEnergySolutions {
-    public class SistemaSolar : ASistemaEnergia {
+    public class SistemaSolar : SistemaEnergia {
         public int HoresSol {  get; set; }
 
         SistemaSolar(int horesSol, float energiaGenerada, string tipusSistema, string data) { 
