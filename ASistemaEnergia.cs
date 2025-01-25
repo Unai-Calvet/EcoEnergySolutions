@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace EcoEnergySolutions {
-    public abstract class SistemaEnergia : ICalculEnergia {
+    public abstract class ASistemaEnergia : ICalculEnergia {
         public float EnergiaGenerada { get; set; }
         public string? TipusSistema { get; set; }
         public string? Data { get; set; }
