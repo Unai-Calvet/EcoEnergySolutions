@@ -7,7 +7,7 @@ namespace EcoEnergySolutions {
         public string? Data { get; set; }
 
         public abstract void ConfigurarParametre(int valorParametre);
-        public abstract float CalcularEnergia(int valorParametre);
+        public abstract void CalcularEnergiaGenerada(int valorParametre);
         public abstract void MostrarInforme();
     }
 }
