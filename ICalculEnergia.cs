@@ -12,8 +12,7 @@ namespace EcoEnergySolutions {
         /// Calcula la energia generada a partir de paràmetre
         /// </summary>
         /// <param name="valorParametre"></param>
-        /// <returns>Resultat del calcul de l'energia generada.</returns>
-        public float CalcularEnergia(int valorParametre);
+        public void CalcularEnergiaGenerada(int valorParametre);
 
         /// <summary>
         /// Mostra les propietats en format de taula
