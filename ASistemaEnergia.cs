@@ -9,6 +9,5 @@ namespace EcoEnergySolutions {
         public abstract void ConfigurarParametre(int valorParametre);
         public abstract float CalcularEnergia(int valorParametre);
         public abstract void MostrarInforme();
-
     }
 }
