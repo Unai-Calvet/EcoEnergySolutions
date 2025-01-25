@@ -10,7 +10,7 @@ namespace EcoEnergySolutions {
             TipusSistema = tipusSistema;
             Data = data;
         }
-        SistemaSolar() : this(0, 0, "solar", DateTime.Today.ToString("d")) { }
+        SistemaSolar() : this(0, 0, "Solar", DateTime.Today.ToString("d")) { }
 
         public override void ConfigurarParametre(int horesSol) { 
             HoresSol = horesSol; 
@@ -21,7 +21,7 @@ namespace EcoEnergySolutions {
         public override void MostrarInforme() {
             Console.WriteLine("|Tipus de sistema\t|Data de la simulació\t|Hores de sol\t|Energia generada\t|");
             Console.WriteLine("-----------------------------------------------------------------------------------");
-            Console.WriteLine($"|Energia {TipusSistema}\t\t|{Data}\t\t|{HoresSol}\t\t|{EnergiaGenerada}\t\t|");
+            Console.WriteLine($"|{TipusSistema}\t\t|{Data}\t\t|{HoresSol}\t\t|{EnergiaGenerada}\t\t|");
         }
     }
 }
