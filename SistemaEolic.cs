@@ -4,13 +4,13 @@ namespace EcoEnergySolutions {
     public class SistemaEolic : SistemaEnergia {
         public int VelocitatVent { get; set; }
 
-        SistemaEolic(int velocitatVent, float energiaGenerada, string tipusSistema, string data) {
+        public SistemaEolic(int velocitatVent, float energiaGenerada, string tipusSistema, string data) {
             VelocitatVent = velocitatVent;
             EnergiaGenerada = energiaGenerada;
             TipusSistema = tipusSistema;
             Data = data;
         }
-        SistemaEolic() : this(0, 0, "Eòlic", DateTime.Today.ToString("d")) { }
+        public SistemaEolic() : this(0, 0, "Eòlic", DateTime.Today.ToString("g")) { }
 
         public override void ConfigurarParametre(int velocitatVent) {
             VelocitatVent = velocitatVent;
