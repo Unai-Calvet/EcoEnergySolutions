@@ -4,13 +4,13 @@ namespace EcoEnergySolutions {
     public class SistemaSolar : SistemaEnergia {
         public int HoresSol {  get; set; }
 
-        SistemaSolar(int horesSol, float energiaGenerada, string tipusSistema, string data) { 
+        public SistemaSolar(int horesSol, float energiaGenerada, string tipusSistema, string data) { 
             HoresSol = horesSol;
             EnergiaGenerada = energiaGenerada;
             TipusSistema = tipusSistema;
             Data = data;
         }
-        SistemaSolar() : this(0, 0, "Solar", DateTime.Today.ToString("d")) { }
+        public SistemaSolar() : this(0, 0, "Solar", DateTime.Today.ToString("g")) { }
 
         public override void ConfigurarParametre(int horesSol) { 
             HoresSol = horesSol; 

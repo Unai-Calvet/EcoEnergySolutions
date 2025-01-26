@@ -4,13 +4,13 @@ namespace EcoEnergySolutions {
     public class SistemaHidroelectric : SistemaEnergia {
         public int CabalAigua { get; set; }
 
-        SistemaHidroelectric(int velocitatVent, float energiaGenerada, string tipusSistema, string data) {
+        public SistemaHidroelectric(int velocitatVent, float energiaGenerada, string tipusSistema, string data) {
             CabalAigua = velocitatVent;
             EnergiaGenerada = energiaGenerada;
             TipusSistema = tipusSistema;
             Data = data;
         }
-        SistemaHidroelectric() : this(0, 0, "Hidroelèctric", DateTime.Today.ToString("d")) { }
+        public SistemaHidroelectric() : this(0, 0, "Hidroelèctric", DateTime.Today.ToString("g")) { }
 
         public override void ConfigurarParametre(int cabalAigua) {
             CabalAigua = cabalAigua;
